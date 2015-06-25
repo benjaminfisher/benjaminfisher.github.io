@@ -1,10 +1,307 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<title>Github Home</title>
-</head>
-<body>
-	<h1>Benjamin J. Fisher's Github Repos</h1>
-</body>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>	
+<!-->
+<html lang="en" class="no-js"> <!--<![endif]-->
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+		<meta charset="utf-8">
+		
+		<title>Benjamin J. Fisher</title>
+		<meta name="description" content="Web Design/Development Portfolio site of Benjamin J. Fisher">
+		<meta name="author" content="Benjamin J. Fisher">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="stylesheet" href="CSS/jquery-ui-1.8.16.custom.css" media="screen" />
+		<link rel="stylesheet" href="js/lib/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+		<link rel="stylesheet" href="CSS/style.css">
+		
+		<script src="js/lib/modernizr-1.7.min.js"></script>
+		
+		<noscript><link rel="stylesheet" href="CSS/no-script.css" /></noscript>
+	</head>
+	<body>
+		<header>
+			<div id="logo">
+				<img src="images/bjf-logo-color.png" alt="Logo"/>
+			</div>
+			<hgroup>
+				<h1>Benjamin J<span>.</span> Fisher</h1>
+				<h2>Web Design and Development</h2>
+			</hgroup>
+			<ul id="links">
+				<li><a href="http://www.linkedin.com/in/fisherbenjamin" id="linkedin" target="_blank"><span>Linked In</span></a></li>
+				<li><a href="https://github.com/benjaminfisher" id="github" target="_blank"><span>GitHub</span></a></li>
+				<li><a href="http://blog.benjaminjfisher.com/" id="blog"><span>My Blog</span></a></li>
+			</ul>
+		</header>
+		
+		<nav role="navigation">
+			<ul>
+				<li class="current gradient"><a href="#projects" tabindex="0">Projects</a></li>
+				<li class="gradient"><a href="#about" tabindex="1">About Me</a></li>
+				<li class="gradient"><a href="#contact" tabindex="2">Contact</a></li>
+			</ul>
+		</nav>
+		
+		<div id="content" role="main">
+			<div id="load">
+				<p>Loading...</p>
+				<img src="images/loading.gif" alt="Loading" />
+			</div>
+			
+			<div id="pList"></div>
+			<section id="projects">
+				<div class="project" id="project1">
+					<ul class="project_list">
+						<li class="prev arrow"><a href="#project6"></a></li>
+						<li><a href="#project1" title="Web Chess" class="active"></a></li>
+						<li><a href="#project2" title="PaulAlone.com"></a></li>
+						<li><a href="#project3" title="Poetry Review"></a></li>
+						<li><a href="#project4" title="Geek Out"></a></li>
+						<li><a href="#project5" title="HRgeek.com"></a></li>
+						<li><a href="#project6" title="Acme Unlimited"></a></li>
+						<li class="next arrow"><a href="#project2" title="Next"></a></li>
+					</ul>
+					
+					<ul class="SS_list">
+						<li>
+							<a class="screenshot" rel="proj1" title="1 of 3 - Web Chess mid-game showing available moves for selected piece" href="images/ScreenShots/webchess_ss1.png">
+								<img  alt="Web Chess screenshot mid game" src="images/ScreenShots/webchess_ss1.png" />
+							</a>
+						</li>
+						<li><a class="screenshot" rel="proj1" title="2 of 3 - Web Chess starting configuration" href="images/ScreenShots/webchess_ss2.png"></a></li>
+						<li><a class="screenshot" rel="proj1" title="3 of 3 - Web Chess screenshot showing captured pieces and move list" href="images/ScreenShots/webchess_ss3.png"></a></li>
+					</ul>
+						
+					<h3>Web Chess</h3>
+					<p><strong>Description:</strong> A web based chess GUI using modern standards and tools.</p>
+					<p>The layout of the board and interface was accomplished using HTML5. CSS3 selectors and properties are used to style the board and interface. All interactivity is coded with Javascript using the jQuery library.</p>
+					<p>The game is still a work in progress. Key functionality like the checkmate and stalemate routines still need to be coded.</p>
+					
+					<ul class="pLinkList">
+						<li class="pLink">
+							<a href="http://webchess.benjaminjfisher.com" target="_blank"><em>Live Site</em></a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="project" id="project2" >
+					<ul class="project_list">
+						<li class="prev arrow"><a href="#project1"></a></li>
+						<li><a href="#project1" title="Web Chess"></a></li>
+						<li><a href="#project2" title="PaulAlone.com" class="active"></a></li>
+						<li><a href="#project3" title="Poetry Review"></a></li>
+						<li><a href="#project4" title="Geek Out"></a></li>
+						<li><a href="#project5" title="HRgeek.com"></a></li>
+						<li><a href="#project6" title="Acme Unlimited"></a></li>
+						<li class="next arrow"><a href="#project3"></a></li>
+					</ul>
+				
+					<ul class="SS_list">
+						<li>
+							<a href="images/ScreenShots/paulalone_ss1.png" title="1 of 3 - PaulAlone.com main page" class="screenshot" rel="proj2">
+								<img src="images/ScreenShots/paulalone_ss1.png" alt="PaulAlone.com screenshot 1" />
+							</a>
+						</li>
+						<li><a href="images/ScreenShots/paulalone_ss2.png" title="2 of 3 - PaulAlone.com album navigation" class="screenshot" rel="proj2"></a></li>
+						<li><a href="images/ScreenShots/paulalone_ss3.png" title="3 of 3 - PaulAlone.com resume information with tabbed navigation" class="screenshot" rel="proj2"></a></li>
+					</ul>
+				
+					
+					<h3><a href="http://paulalone.com" target="_blank">PaulAlone.com</a></h3>
+					<p><strong>Description:</strong> This site was created to provide a web presence for a Portland based musician / photographer / designer.</p>
+					<p>I designed a site to showcase his various creative talents, with a photography gallery, listing of released albums, and an upcoming performance list. I also implemented a simple web-based <abbr title="Content Management System">CMS</abbr> to allow him to add additional content and update performance information on the go.</p>
+					<p>I used Spry for the accordion and tab effects initially. I&apos;m working on switching this over to jQuery UI. I&apos;m also working on changing the galleries from CSS driven effects to <a href="http://fancybox.net/home" target="_blank">Fancybox</a>.</p>
+					
+					<ul class="pLinkList">
+						<li class="pLink">
+							<a href="http://paulalone.com" target="_blank"><em>Live Site</em></a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="project" id="project3">
+					<ul class="project_list">
+						<li class="prev arrow"><a href="#project2"></a></li>
+						<li><a href="#project1" title="Web Chess"></a></li>
+						<li><a href="#project2" title="PaulAlone.com"></a></li>
+						<li><a href="#project3" title="Poetry Review" class="active"></a></li>
+						<li><a href="#project4" title="Geek Out"></a></li>
+						<li><a href="#project5" title="HRgeek.com"></a></li>
+						<li><a href="#project6" title="Acme Unlimited"></a></li>
+						<li class="next arrow"><a href="#project4"></a></li>
+					</ul>
+				
+					<ul class="SS_list">
+						<li>
+							<a class="screenshot" rel="proj3" title="1 of 2 - Poetry Review portrait layout" href="images/ScreenShots/poetry-review_ss1.jpg" >
+								<img src="images/ScreenShots/poetry-review_ss1.jpg" alt="Poetry Review screenshot" />
+							</a>
+						</li>
+						<li><a class="screenshot" rel="proj3" title="2 of 2 - Poetry Review landscape layout" href="images/ScreenShots/poetry-review_ss2.png"></a></li>
+					</ul>
+					
+					<h3><a href="http://poetryreview.benjaminjfisher.com" target="_blank">Poetry Review</a></h3>
+					<p><strong>Description:</strong> A coded prototype of a front-end interface for reviewers to read, comment on and approve or deny submissions for a literary magazine.</p>
+					<p>HTML5 and CSS3 were used to give the interface a stream&#45;lined modern look. I also used @media queries to allow for a responsive layout based on screen width.</p>
+					
+					<ul class="pLinkList">
+						<li class="pLink">
+							<a href="http://poetryreview.benjaminjfisher.com" target="_blank"><em>View Prototype</em></a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="project" id="project4">
+					<ul class="project_list">
+						<li class="prev arrow"><a href="#project3"></a></li>
+						<li><a href="#project1" title="Web Chess"></a></li>
+						<li><a href="#project2" title="PaulAlone.com"></a></li>
+						<li><a href="#project3" title="Poetry Review"></a></li>
+						<li><a href="#project4" title="Geek Out" class="active"></a></li>
+						<li><a href="#project5" title="HRgeek.com"></a></li>
+						<li><a href="#project6" title="Acme Unlimited"></a></li>
+						<li class="next arrow"><a href="#project5"></a></li>
+					</ul>
+
+					<a href="images/ScreenShots/geek_out_ss_full.png" class="screenshot" rel="proj4" title="Geek Out blog design">
+						<img src="images/ScreenShots/Geek_Out_ss1.png" alt="Geek Out Blog screenshot" />
+					</a>
+					<div class="projectDescription">
+						<h3>Geek Out</h3>
+						<p><strong>Description:</strong> This is a fully coded design for a science fiction themed blog.</p>
+						<p>The navigation is absolutely positioned to keep it on screen while scrolling.</p>
+					</div>
+				</div>
+				
+				<div class="project" id="project5">
+					<ul class="project_list">
+						<li class="prev arrow"><a href="#project4"></a></li>
+						<li><a href="#project1" title="Web Chess"></a></li>
+						<li><a href="#project2" title="PaulAlone.com"></a></li>
+						<li><a href="#project3" title="Poetry Review"></a></li>
+						<li><a href="#project4" title="Geek Out"></a></li>
+						<li><a href="#project5" title="HRgeek.com" class="active"></a></li>
+						<li><a href="#project6" title="Acme Unlimited"></a></li>
+						<li class="next arrow"><a href="#project6"></a></li>
+					</ul>
+					
+					<ul class="SS_list">
+						<li>
+							<a class="screenshot" rel="proj5" title="1 of 2 - HRgeek.com" href="images/ScreenShots/HRgeek_ss1.png" >
+								<img src="images/ScreenShots/HRgeek_ss1.png" alt="HRgeek screenshot" />
+							</a>
+						</li>
+						<li><a class="screenshot" title="2 of 2 - HRgeek.com original design comp" rel="proj5" href="images/ScreenShots/HRgeek_ss2.png" ></a></li>
+					</ul>
+					
+					<h3><a href="http://HRgeek.com" target="_blank">HRgeek.com</a></h3>
+					<p><strong>Description:</strong> Site for a Portland based independant human relations contractor.</p>
+					<p>This site required a good deal of redesign from the original concept to the final launch. I ended up doing the photography for the site header, which required a revamping of the layout. The client needed the site online ASAP which resulted in there being less than 3 weeks between initial design and final launch. I also implemented a simple web-based <abbr title="Content Management System">CMS</abbr> to allow the client to make basic updates to information and services on the site.</p>
+					
+					<ul class="pLinkList">
+						<li class="pLink">
+							<a href="http://hrgeek.com" target="_blank"><em>Live Site</em></a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="project" id="project6">
+					<ul class="project_list">
+						<li class="prev arrow"><a href="#project5"></a></li>
+						<li><a href="#project1" title="Web Chess"></a></li>
+						<li><a href="#project2" title="PaulAlone.com"></a></li>
+						<li><a href="#project3" title="Poetry Review"></a></li>
+						<li><a href="#project4" title="Geek Out"></a></li>
+						<li><a href="#project5" title="HRgeek.com"></a></li>
+						<li><a href="#project6" title="Acme Unlimited" class="active"></a></li>
+						<li class="next arrow"><a href="#project1"></a></li>
+					</ul>
+				
+					<a href="images/ScreenShots/Acme_ss_full.png" class="screenshot" rel="proj6" title="Acme Unlimited design">
+						<img src="images/ScreenShots/Acme_ss1.png" alt="Acme Unlimited screenshot">
+					</a>
+					<div class="projectDescription">
+						<h3>Acme Unlimited</h3>
+						<p>Three column design for a corporate website with side bar navigation, and client testimonials.</p>
+					</div>
+				</div>
+			</section>
+			
+			<section id="about">
+				<figure>
+					<img src="images/me.png" alt="Me" title="Me"/>
+					<figcaption>Photo by Elizabeth Archers</figcaption>
+				</figure>
+				
+				
+				<div id="accordion">					
+					<h3><a href="#">Bio</a></h3>
+					<div>
+						<!-- <a href="files/resume.pdf" target="_blank" id="resume">Resume</a> -->
+						<p>Originally hailing from Western Michigan, I relocated to Portland in 1998 after acquiring an Associates Degree in Business with a <abbr title="Computer Information Systems">CIS</abbr> focus from Baker College. In 2008 I decided to continue my education, and enrolled in the Art Institute of Portland to study Web Design and Interactive Media.</p>
+						<p>I've had an interest in computers since before they had disk drives. I learned BASIC by reading the manual that came with my first CoCo Computer from RadioShack. I've been writing fiction and drawing for almost that long. My first webpage was on GeoCites written by gleaning source code from other sites, while I was still at Baker. </p>
+					</div>
+					
+					<h3><a href="#">Tools</a></h3>
+					<div>
+						<ul>
+							<li><abbr title="HyperText Markup Language">HTML</abbr> / HTML5</li>
+							<li><abbr title="Cascading Style Sheets">CSS</abbr> / CSS3 / SCSS</li>
+							<li>JavaScript</li>
+							<li>jQuery / jQuery UI</li>
+							<li>Python</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			
+			<section id="contact">
+				<form action="email.php" method="post">
+					<label for="name">Name</label>
+					<input id="name" name="name" type="text" placeholder="Your name" class="input_large"/><br />
+					
+					<label for="email">Email</label>
+					<input id="email" name="email" type="email" placeholder="Your email address" class="input_large"/><br />
+					
+					<label for="subject">Subject</label>
+					<input id="subject" name="subject" type="text" placeholder="Message subject..." class="input_large"/>
+					
+					<textarea cols="10" rows="15" id="message" name="message" placeholder="Enter your message here..."></textarea>
+					<button id="send_button">Send</button>
+				</form>
+			</section>
+		</div>
+		
+		<footer>
+			<p id="legal">&copy; Benjamin Fisher 2011</p>
+		</footer>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+		<script>!window.jQuery && document.write(unescape('%3Cscript src="js/lib/jquery-1.6.2.min.js"%3E%3C/script%3E'))</script>
+		<script src="js/lib/jquery.formalize.min.js"></script>
+		<script src="js/lib/jquery.cycle.min.js"></script>
+		<script src="js/lib/jquery-ui-1.8.16.custom.min.js"></script>
+		<script src="js/lib/fancybox/jquery.easing-1.3.pack.js"></script>
+		<script src="js/lib/fancybox/jquery.fancybox-1.3.4.js"></script>
+		<script src="js/lib/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/lib/jquery.loadImages.1.0.1.min.js"></script>
+		<script src="js/script.js"></script>
+		<!--[if lt IE 7 ]>
+			<script src="js/libs/dd_belatedpng.js"></script>
+			<script> DD_belatedPNG.fix('img, .png_bg');</script>
+		<![endif]-->
+	</body>
 </html>

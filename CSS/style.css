@@ -1,0 +1,404 @@
+
+/* Colors
+ * Light Green: #7f0
+ * Green: #008000
+ * 
+ */
+
+@import url("reset.css");
+@import url("formalize.css");
+
+@font-face {
+    font-family: 'CallunaRegular';
+    src: url('../fonts/Calluna-Regular-webfont.eot');
+    src: url('../fonts/Calluna-Regular-webfont.eot?iefix') format('eot'),
+         url('../fonts/Calluna-Regular-webfont.woff') format('woff'),
+         url('../fonts/Calluna-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Calluna-Regular-webfont.svg#webfontJYolXlF6') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hidden{display:none;}
+
+body{
+	font-size:16px; 
+	background:#000;
+	color:#DDD;
+	min-width:666px;
+}
+
+/* See http://www.alistapart.com/articles/fluid-images/ for details on fluid images */
+body:not(.ie7) img{max-width:100%;}
+
+h1{font-size:3.2em;}
+h2{font-size:1.6em;}
+h3{font-size:1.2em;}
+
+/* Loading styles */
+
+#load{
+	background-color: #000;
+	color: #7f0;
+	height: 100%;
+	left: 0;
+	overflow-y: hidden;
+	padding-top: 150px;
+	position:absolute;
+	text-align:center;
+	top:0;
+	width:100%;
+	z-index:1000;
+}
+	div#load p {
+		display:block;
+	}
+	div#load img{
+		position:relative;
+		margin-top:1em;
+	}
+
+/* Header Styles */
+header{
+	background-color:#000;
+	color:#DDD;
+	font-family: 'CallunaRegular', Times;
+	padding:32px;
+	height:100px;
+	width:700px;
+}
+
+#logo{
+	float:left;
+	font-size:2em;
+	margin-right:1em;
+	position:relative;
+}
+	#logo a{
+		position:relative;
+		top:20%;
+		text-decoration:none;
+		color:#FFF;
+	}
+	
+header hgroup{
+	position:relative;
+	float:left;
+}
+	header hgroup h1 span{color:#7f0;}
+	header hgroup h2{letter-spacing:2.5px;}
+
+#links{
+	float:right;
+	position:relative;
+	right: 50px;
+    top: 90px;
+}
+
+	#links li{
+		border:1px solid black;
+		float:left;
+		height:32px;
+		margin-left:0.5em;
+		width:32px;
+	}
+	
+	#links li a{
+		height:24px;
+		width:24px;
+		display:block;
+		text-decoration:none;
+		color:#FFF;
+	}
+		#links li a:active{ color:#7f0; }
+	
+	#links li span{
+	    background-color: #000000;
+	    display: block;
+	    left: 125px;
+	    position: absolute;
+	    top: 10px;
+	    visibility: hidden;
+		width:5em;
+	}
+	#links li a:hover span, #links li a:focus span{
+		visibility:visible;
+	}
+	
+	/* Link Sprite styles */
+	#linkedin, #github, #blog{background:url(../images/small_sprite.png);}
+		#linkedin{background-position:top left;}
+		#linkedin:hover, #linkedin:focus{background-position:-24px 0px;}
+		#linkedin:active{background-position:-48px 0px;}
+		
+		#github{background-position:0 -24px;}
+		#github:hover, #github:focus{background-position:-24px -24px;}
+		#github:active{background-position:-48px -24px;}
+		
+		#blog{background-position:0 -48px;}
+		#blog:hover, #blog:focus{background-position:-24px -48px;}
+		#blog:active{background-position:-48px -48px;}
+	
+/* Nav Styles (header tabs) */
+nav{
+	font-size:1.2em;
+	float:left;
+	margin:-10px 0px 0px;
+	position:relative;
+	left:158px;
+	top:-35px;
+}
+	
+	nav ul li{
+		background: #7d7e7d; /* Old browsers */
+		background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Opera11.10+ */
+		background: -ms-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+/*		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+		background: linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+		
+		border-top:1px solid #AAA;
+		border-left:1px solid #AAA;
+		border-right:1px solid #AAA;
+		float:left;
+		letter-spacing:2px;
+		margin-right:1px;
+		
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		-moz-border-radius-topleft: 15px;
+		-moz-border-radius-topright: 15px;
+	}
+	
+	nav ul li.current{
+		background: #AAA; /* Old browsers */
+		background: -moz-linear-gradient(top, #AAAAAA 0%, #828c95 36%, #333333 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#AAA), color-stop(36%,#828c95), color-stop(100%,#333333)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #AAAAAA 0%,#828c95 36%,#333333 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #AAAAAA 0%,#828c95 36%,#333333 100%); /* Opera11.10+ */
+		background: -ms-linear-gradient(top, #AAAAAA 0%,#828c95 36%,#333333 100%); /* IE10+ */
+/*		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AAAAAA', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+		background: linear-gradient(top, #AAA 0%,#828c95 36%,#333333 100%); /* W3C */
+		
+		position:relative;
+		top:2px;
+		z-index:10;
+	}
+
+	nav ul li a{
+		color:#CCC;
+		display:block;
+		height:35px;
+		margin-bottom:-10px;
+		padding-top:10px;
+		text-align:center;
+		text-decoration:none;
+		width:126px;
+	}
+	nav ul li.current a{color:#FFF;}
+	nav ul li:not(.current) a:hover{color:#6DBB20;}
+	nav ul li:not(.current) a:active{color:#7f0;}
+	.ie9 nav ul li.current{background-color:#333;}
+	
+	nav ul li:not(.current) a:focus{color:green;}
+	
+/* Content Styles */
+
+#content{
+	background: #333;
+	border-top: 3px inset #FFF;
+	border-bottom: 3px inset #FFF;
+	clear:both;
+	font-family:'Vollkorn', arial, serif;
+	height:450px;
+	overflow:hidden;
+	position:relative;
+	top:-36px;
+	width:100%;
+	min-width:666px;
+}
+	
+	#content section{
+		max-width:735px;
+		height:inherit;
+		padding:1em;
+	}
+	
+	#content h2, #content h3{margin:0.5em 0em;}
+	
+	#content:after, header:after, #project_list:after{
+		content:".";
+		height:0px;
+		line-height:0px;
+		clear:both;
+		display:block;
+		visibility:hidden;
+	}
+	
+	#about figure{
+		float:left;
+		margin-left:142px;
+		margin-right:1em;
+	}
+	#about figure img{border:2px solid #666;}
+	#about figure figcaption{font-style:italic; text-align:center;}
+	
+	#about p{margin-bottom:1em;}
+	
+	#accordion h3 {
+		font-size:1.2em;
+		margin:0;
+		overflow:auto;
+		position:relative;
+	}
+	#accordion div{ height:295px; }
+	
+	#content div.wrapper{ height:300px; }
+	
+	/* Resume link on About tab */
+	#resume{
+	    color: #FFF;
+		display:block;
+		float:right;
+		font-size:1.2em;
+		position:relative;
+		text-decoration: none;
+		top:-31px;
+	}
+	#resume:link{}
+	#resume:visited{}
+	#resume:hover{color:green;}
+	#resume:active{color:#7f0;}
+
+/* Project Styles */
+
+#projects{
+	position:relative;
+	overflow:hidden;
+}
+
+div.project h3{padding:1em 0em; text-transform:uppercase;}
+
+/* Hide the non-JS project navigation */
+ul.project_list{display:none;}
+
+#projects div.project div.projectDescription{
+    height: 500px;
+    width: 750px;
+}
+.ie8 ul.project_list{display:block;}
+
+/* Styles for Cycle projects slideshow navigation */
+#pList{
+	height:10px;
+	float:left;
+	margin-left:72px;
+	position:relative;
+	top: 20px;
+}
+	#pList a{
+		border:2px solid rgba(0,100,0,80);
+		background-color:green;
+		color:#FFF;
+		display:block;
+		height:10px;
+		margin-bottom:1em;
+		outline:none;
+		position:relative;
+		text-indent:-9999em;
+		text-decoration:none;
+		width:10px;
+		
+		border-radius:10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+	}
+
+	#pList a:hover, #pList a.activeSlide{background-color:#7f0;}
+	
+	/* Styles for links after project text */
+	#projects p strong{font-weight:bolder;}
+	#projects a.pLink{
+		color:#FFF;
+		display:block;
+		margin-top:1em;
+		text-decoration:none;
+	}
+	#projects strong{font-weight:bolder;}
+	
+	#projects a:link{color:#FFF;}
+	#projects a:visited{color:#DDD;}
+	#projects a:hover{color:green;}
+	#projects a:active{color:#7f0;}
+
+	#projects a em:link{color:#FFF;}
+	#projects a em:visited{color:#DDD;}
+	#projects a em:hover{color:green;}
+	#projects a em:active{color:#7f0;}
+	
+	#projects div.project p{margin-bottom:1em;}
+	#projects div.project p strong{font-weight:bolder;}
+	
+	#projects ul.pLinkList li{
+		color:#7f0;
+		list-style-position:inside;
+		list-style-type:disc;
+	}
+
+/* Project screenshots */
+
+#projects ul.SS_list li{display:none;}
+#projects ul.SS_list li:nth-of-type(1){display:block;}
+
+a.screenshot img, img.screenshot{
+	border:1px solid black;
+	background:#CCC;
+	float:left;
+	margin-top:1em;
+	margin-left:72px;
+	margin-right:1em;
+	position:relative;
+	width:385px;
+}
+	div.screenshot{height:390px; width:390px;}
+	
+	#fancybox-title{text-align:center;}
+	#webChessCode{height:500px; width:500px; float:left;}
+
+div.project{
+	height:100%;
+	position:relative;
+}
+	
+/* Contact Styles */
+#contact{width:533px;}
+	#contact form{margin-left:145px;}
+	#contact form textarea{margin:1em 0;}
+	#contact form input{margin:0.5em;}
+	
+	#contact form label{
+		display:inline-block;
+		position:relative;
+		text-align:right;
+		top:7px;
+		width:3.5em;
+	}
+	
+#thanx{
+	font-size:2em;
+	position:relative;
+	left:128px;
+}
+#thanx p{margin-bottom:1em;}
+
+/* Footer Styles */
+
+footer{ text-align:right; padding-right:5em; margin-top:-2em; }
+
+
+/* Special IE styles */
+
+.ie7 img{z-index:100;}
+ */
