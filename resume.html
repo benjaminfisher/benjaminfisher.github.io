@@ -271,11 +271,12 @@ address{display:block;margin-bottom:19.416px;font-style:normal;line-height:19.41
             </div>
         </div>
 <script>
-/*
- AngularJS v1.0.1
- (c) 2010-2012 Google, Inc. http://angularjs.org
- License: MIT
-*/
+
+	/*
+	 AngularJS v1.0.1
+	 (c) 2010-2012 Google, Inc. http://angularjs.org
+	 License: MIT	*/
+
 (function(T,aa,p){'use strict';function m(b,a,c){var d;if(b)if(M(b))for(d in b)d!="prototype"&&d!="length"&&d!="name"&&b.hasOwnProperty(d)&&a.call(c,b[d],d);else if(b.forEach&&b.forEach!==m)b.forEach(a,c);else if(J(b)&&va(b.length))for(d=0;d<b.length;d++)a.call(c,b[d],d);else for(d in b)b.hasOwnProperty(d)&&a.call(c,b[d],d);return b}function kb(b){var a=[],c;for(c in b)b.hasOwnProperty(c)&&a.push(c);return a.sort()}function dc(b,a,c){for(var d=kb(b),e=0;e<d.length;e++)a.call(c,b[d[e]],d[e]);return d}
 function lb(b){return function(a,c){b(c,a)}}function wa(){for(var b=Y.length,a;b;){b--;a=Y[b].charCodeAt(0);if(a==57)return Y[b]="A",Y.join("");if(a==90)Y[b]="0";else return Y[b]=String.fromCharCode(a+1),Y.join("")}Y.unshift("0");return Y.join("")}function D(b){m(arguments,function(a){a!==b&&m(a,function(a,d){b[d]=a})});return b}function H(b){return parseInt(b,10)}function xa(b,a){return D(new (D(function(){},{prototype:b})),a)}function x(){}function ya(b){return b}function B(b){return function(){return b}}
 function v(b){return typeof b=="undefined"}function s(b){return typeof b!="undefined"}function J(b){return b!=null&&typeof b=="object"}function G(b){return typeof b=="string"}function va(b){return typeof b=="number"}function ma(b){return Sa.apply(b)=="[object Date]"}function K(b){return Sa.apply(b)=="[object Array]"}function M(b){return typeof b=="function"}function na(b){return b&&b.document&&b.location&&b.alert&&b.setInterval}function Q(b){return G(b)?b.replace(/^\s*/,"").replace(/\s*$/,""):b}function ec(b){return b&&
@@ -428,5 +429,141 @@ j){j.databound?d.prop("selected",!1):j=c;g?a.$watch(g,function(a,c){e.$set("valu
 noop:x,bind:Va,toJson:ba,fromJson:mb,identity:ya,isUndefined:v,isDefined:s,isString:G,isFunction:M,isObject:J,isNumber:va,isElement:ec,isArray:K,version:hd,isDate:ma,lowercase:C,uppercase:la,callbacks:{counter:0}});sa=kc(T);try{sa("ngLocale")}catch(c){sa("ngLocale",[]).provider("$locale",Yc)}sa("ng",["ngLocale"],["$provide",function(a){a.provider("$compile",Bb).directive({a:jd,input:ac,textarea:ac,form:kd,script:Sd,select:Ud,style:Wd,option:Vd,ngBind:vd,ngBindHtmlUnsafe:xd,ngBindTemplate:wd,ngClass:yd,
 ngClassEven:Ad,ngClassOdd:zd,ngCsp:Dd,ngCloak:Bd,ngController:Cd,ngForm:ld,ngHide:Ld,ngInclude:Fd,ngInit:Gd,ngNonBindable:Hd,ngPluralize:Id,ngRepeat:Jd,ngShow:Kd,ngSubmit:Ed,ngStyle:Md,ngSwitch:Nd,ngSwitchWhen:Od,ngSwitchDefault:Pd,ngOptions:Td,ngView:Rd,ngTransclude:Qd,ngModel:qd,ngList:sd,ngChange:rd,required:bc,ngRequired:bc,ngValue:ud}).directive(jb).directive(cc);a.provider({$anchorScroll:tc,$browser:vc,$cacheFactory:wc,$controller:Ac,$document:Bc,$exceptionHandler:Cc,$filter:Pb,$interpolate:Dc,
 $http:Uc,$httpBackend:Vc,$location:Hc,$log:Ic,$parse:Mc,$route:Pc,$routeParams:Qc,$rootScope:Rc,$q:Nc,$sniffer:Sc,$templateCache:xc,$timeout:Zc,$window:Tc})}])})(Yb);u(aa).ready(function(){ic(aa,ob)})})(window,document);angular.element(document).find("head").append('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak{display:none;}ng\\:form{display:block;}</style>');
-function ResumeCtrl($scope){$scope.data = {"name":"Benjamin J. Fisher","description":"Front End Developer","contact":{"address":{"street":"400 West 119th Street","street2":"#9H","city":"New York, NY 10027"},"phone":"503.869.5267","email":"benjamin.fisher@ymail.com","web":{"href":"http://benjaminjfisher.com","link":"BenjaminJFisher.com","LinkedIn":"fisherbenjamin"}},"education":[{"name":"The Art Institute of Portland","location":"Portland, Oregon","dates":"January 2009 - September 2012","details":["Enrolled in the Web Design and Interactive Media bachelor’s program","Volunteered for the Web Raising event to build web sites for local non-profits two years running"]},{"name":"Portland Community College","location":"Portland, Oregon","dates":"October 2008","details":["Completed self-directed courses in Microsoft Access 2007, Level I and Level II"]},{"name":"Baker College of Muskegon","location":"Muskegon, Michigan","dates":"Graduated Cum Laude 1998","details":["Completed an Associate of Business degree with a focus in Computer Information Systems","Completed three semesters of accounting, and classes in system theory and development, business writing, database design, and human relations"]}],"experience":[{"name":"Media Drink","position":"Junior Web Developer","location":"Portland Oregon","dates":"February 2012 - September 2012","details":["Completed paid internship position","Developed static responsive one page sites for local businesses, with turn-around times of less than five hours","Worked on Wordpress themes for CMS driven dynamic sites","Championed the use of open source version control, and mobile-first development"]},{"name":"The Art Institute of Portland","position":"Tutor","location":"Portland Oregon","dates":"May 2011 - September 2012","details":["Tutoring individual students, and groups of up to five students, in subjects relating to web design and development","Provided inclass support for instructors for HTML/CSS, JavaScript/jQuery, and Adobe Flash courses"]},{"name":"ACS, a Xerox Company","position":"iOS Tier 1 Support Technician","location":"Portland Oregon","dates":"September 2011 - January 2012","details":["Provided technical support to U.S. and U.K. customers for mobile, tablet, and media devices"]},{"name":"H&R Block","position":"Customer Service Professional","location":"Portland Oregon","dates":"January 2010 - April 2010","details":["Responsibilities included: setting appointments for tax preparers, taking credit and cash payments, EOD cash drawer reconciliation and reporting, general office work such as filing, collating and multi-line phone handling","Within less than a week, and with minimal training, took on all of the standard customer service responsibilities after starting half way through the tax season","Took on additional responsibilites including migrating employee records from a simple spreadsheet, to a database system with formatted reports"]}],"skills":{"languages":[{"name":"HTML","level":5},{"name":"CSS","level":5},{"name":"JavaScript","level":4},{"name":"PHP","level":2},{"name":"SQL","level":1},{"name":"Python","level":2},{"name":"Ruby","level":1}],"tools":[{"name":"jQuery","level":4},{"name":"Node.js","level":3},{"name":"AngularJS","level":2},{"name":"Bootstrap","level":2},{"name":"Ender","level":2},{"name":"SASS/Compass","level":4},{"name":"LESS","level":3},{"name":"Wordpress","level":3}],"applications":[{"name":"PhotoShop","level":4},{"name":"Illustrator","level":3},{"name":"Adobe Flash","level":2}]}};}</script>
+function ResumeCtrl($scope) {
+	$scope.data = {
+		"name" : "Benjamin J. Fisher",
+		"description" : "Front End Developer",
+		"contact" : {
+			"address" : {
+				"street" : "400 West 119th Street",
+				"street2" : "#9H",
+				"city" : "New York, NY 10027"
+			},
+			"phone" : "503.869.5267",
+			"email" : "benjamin.fisher@ymail.com",
+			"web" : {
+				"href" : "http://benjaminjfisher.com",
+				"link" : "BenjaminJFisher.com",
+				"LinkedIn" : "fisherbenjamin",
+				"AboutMe" : "http://about.me/benjaminfisher"
+			}
+		},
+		"education" : [{
+			"name" : "The Art Institute of Portland",
+			"location" : "Portland, Oregon",
+			"dates" : "January 2009 - September 2012",
+			"details" : ["Enrolled in the Web Design and Interactive Media bachelor’s program", "Volunteered for the Web Raising event to build web sites for local non-profits two years running"]
+		}, {
+			"name" : "Portland Community College",
+			"location" : "Portland, Oregon",
+			"dates" : "October 2008",
+			"details" : ["Completed self-directed courses in Microsoft Access 2007, Level I and Level II"]
+		}, {
+			"name" : "Baker College of Muskegon",
+			"location" : "Muskegon, Michigan",
+			"dates" : "Graduated Cum Laude 1998",
+			"details" : ["Completed an Associate of Business degree with a focus in Computer Information Systems", "Completed three semesters of accounting, and classes in system theory and development, business writing, database design, and human relations"]
+		}],
+		"experience" : [{
+			"name" : "Harrison & Star / MSCG",
+			"position" : "Interactive Developer",
+			"location" : "New York City, NY",
+			"dates" : "November 2012 - June 2015",
+			"details" : ["Coding web based animations for iOS devices to launch on the Veeva platform. Coding HTML email blasts, including responsive emails, and testing blasts using Litmus and Email on Acid. Front end coding for websites with and without CMS back-ends. Working with content management systems, like WordPress, and DNN (with and without MVC)."]
+		}, {
+			"name" : "Media Drink",
+			"position" : "Junior Web Developer",
+			"location" : "Portland Oregon",
+			"dates" : "February 2012 - September 2012",
+			"details" : ["Completed paid internship position", "Developed static responsive one page sites for local businesses, with turn-around times of less than five hours", "Worked on Wordpress themes for CMS driven dynamic sites", "Championed the use of open source version control, and mobile-first development"]
+		}, {
+			"name" : "The Art Institute of Portland",
+			"position" : "Tutor",
+			"location" : "Portland Oregon",
+			"dates" : "May 2011 - September 2012",
+			"details" : ["Tutoring individual students, and groups of up to five students, in subjects relating to web design and development", "Provided inclass support for instructors for HTML/CSS, JavaScript/jQuery, and Adobe Flash courses"]
+		}, {
+			"name" : "ACS, a Xerox Company",
+			"position" : "iOS Tier 1 Support Technician",
+			"location" : "Portland Oregon",
+			"dates" : "September 2011 - January 2012",
+			"details" : ["Provided technical support to U.S. and U.K. customers for mobile, tablet, and media devices"]
+		}, {
+			"name" : "H&R Block",
+			"position" : "Customer Service Professional",
+			"location" : "Portland Oregon",
+			"dates" : "January 2010 - April 2010",
+			"details" : ["Responsibilities included: setting appointments for tax preparers, taking credit and cash payments, EOD cash drawer reconciliation and reporting, general office work such as filing, collating and multi-line phone handling", "Within less than a week, and with minimal training, took on all of the standard customer service responsibilities after starting half way through the tax season", "Took on additional responsibilites including migrating employee records from a simple spreadsheet, to a database system with formatted reports"]
+		}],
+		"skills" : {
+			"languages" : [{
+				"name" : "HTML",
+				"level" : 5
+			}, {
+				"name" : "CSS",
+				"level" : 5
+			}, {
+				"name" : "JavaScript",
+				"level" : 4
+			}, {
+				"name" : "PHP",
+				"level" : 2
+			}, {
+				"name" : "SQL",
+				"level" : 1
+			}, {
+				"name" : "Python",
+				"level" : 2
+			}, {
+				"name" : "Ruby",
+				"level" : 1
+			}],
+			"tools" : [{
+				"name" : "jQuery",
+				"level" : 4
+			}, {
+				"name" : "Node.js",
+				"level" : 3
+			}, {
+				"name" : "AngularJS",
+				"level" : 2
+			}, {
+				"name" : "Bootstrap",
+				"level" : 2
+			}, {
+				"name" : "Ender",
+				"level" : 2
+			}, {
+				"name" : "SASS/Compass",
+				"level" : 4
+			}, {
+				"name" : "LESS",
+				"level" : 3
+			}, {
+				"name" : "Wordpress",
+				"level" : 3
+			}, {
+				"name" : "Git",
+				"level" : 3
+			}, {
+				"name" : "SVN",
+				"level" : 3
+			}],
+			"applications" : [{
+				"name" : "PhotoShop",
+				"level" : 4
+			}, {
+				"name" : "Aptana Studio v. 3",
+				"level" : 4
+			}, {
+				"name" : "Illustrator",
+				"level" : 3
+			}, {
+				"name" : "Adobe Flash",
+				"level" : 2
+			}]
+		}
+	};
+}
+</script>
 </body></html>
