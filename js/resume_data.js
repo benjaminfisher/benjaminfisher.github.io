@@ -13,7 +13,8 @@ function ResumeCtrl($scope) {
 			"web" : {
 				"href" : "http://benjaminjfisher.com",
 				"link" : "BenjaminJFisher.com",
-				"LinkedIn" : "fisherbenjamin"
+				"LinkedIn" : "fisherbenjamin",
+				"AboutMe" : "http://about.me/benjaminfisher"
 			}
 		},
 		"education" : [{
@@ -33,6 +34,12 @@ function ResumeCtrl($scope) {
 			"details" : ["Completed an Associate of Business degree with a focus in Computer Information Systems", "Completed three semesters of accounting, and classes in system theory and development, business writing, database design, and human relations"]
 		}],
 		"experience" : [{
+			"name" : "Harrison & Star / MSCG",
+			"position" : "Interactive Developer",
+			"location" : "New York City, NY",
+			"dates" : "November 2012 - June 2015",
+			"details" : ["Coding web based animations for iOS devices to launch on the Veeva platform. Coding HTML email blasts, including responsive emails, and testing blasts using Litmus and Email on Acid. Front end coding for websites with and without CMS back-ends. Working with content management systems, like WordPress, and DNN (with and without MVC)."]
+		}, {
 			"name" : "Media Drink",
 			"position" : "Junior Web Developer",
 			"location" : "Portland Oregon",
@@ -104,9 +111,18 @@ function ResumeCtrl($scope) {
 			}, {
 				"name" : "Wordpress",
 				"level" : 3
+			}, {
+				"name" : "Git",
+				"level" : 3
+			}, {
+				"name" : "SVN",
+				"level" : 3
 			}],
 			"applications" : [{
 				"name" : "PhotoShop",
+				"level" : 4
+			}, {
+				"name" : "Aptana Studio v. 3",
 				"level" : 4
 			}, {
 				"name" : "Illustrator",
