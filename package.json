@@ -24,6 +24,9 @@
   "bugs": {
     "url": "https://github.com/benjaminfisher/benjaminfisher.github.io/issues"
   },
-  "homepage": "https://github.com/benjaminfisher/benjaminfisher.github.io"
+  "homepage": "https://github.com/benjaminfisher/benjaminfisher.github.io",
+  "dependencies": {
+    "angular": "^1.4.4",
+    "bootstrap": "^3.3.5"
+  }
 }
- 
