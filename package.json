@@ -1,0 +1,29 @@
+{
+  "name": "benjaminfisher.github.io",
+  "version": "1.0.0",
+  "description": "Website code for benjaminjfisher.com",
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "build-css": "latest",
+    "concat-cli": "latest",
+    "cssmin": "latest",
+    "jsmin": "^1.0.1"
+  },
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:js": "jsmin js/resume_data.js > js/resume_data.min.js",
+    "build:css": "concat-cli -f CSS/*.css > CSS/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminfisher/benjaminfisher.github.io.git"
+  },
+  "author": "Benjamin J. Fisher 2015",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benjaminfisher/benjaminfisher.github.io/issues"
+  },
+  "homepage": "https://github.com/benjaminfisher/benjaminfisher.github.io"
+}
+ 

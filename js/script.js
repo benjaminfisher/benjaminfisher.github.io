@@ -18,7 +18,7 @@ $(function(){
 		var pLabels = new Array();
 		$('#projects div h3').each(function(){
 			pLabels.push($(this).text());
-		})
+		});
 		
 		// Add a title attribute to each link in the pList dots from the pLables array
 		$('#pList a').each(function(i){

@@ -4,12 +4,12 @@ function ResumeCtrl($scope) {
 		"description" : "Front End Developer",
 		"contact" : {
 			"address" : {
-				"street" : "400 West 119th Street",
-				"street2" : "#9H",
+				"street" : "Ask Me",
+				"street2" : "",
 				"city" : "New York, NY 10027"
 			},
-			"phone" : "503.869.5267",
-			"email" : "benjamin.fisher@ymail.com",
+			"phone" : "503.869.XXXX",
+			"email" : "benjamin.fisher@xxxxx.com",
 			"web" : {
 				"href" : "http://benjaminjfisher.com",
 				"link" : "BenjaminJFisher.com",
@@ -21,7 +21,11 @@ function ResumeCtrl($scope) {
 			"name" : "The Art Institute of Portland",
 			"location" : "Portland, Oregon",
 			"dates" : "January 2009 - September 2012",
-			"details" : ["Enrolled in the Web Design and Interactive Media bachelor’s program", "Volunteered for the Web Raising event to build web sites for local non-profits two years running"]
+			"details" : [
+					"Enrolled in the Web Design and Interactive Media bachelor’s program",
+					"Volunteered for the Web Raising event to build web sites for local non-profits two years running",
+					"Development lead for Tucker Maxon School Web Raising"
+				]
 		}, {
 			"name" : "Portland Community College",
 			"location" : "Portland, Oregon",
